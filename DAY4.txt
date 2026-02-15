@@ -1,0 +1,124 @@
+ZSH Setup
+
+nano ~/.zshrc → edit zsh config
+
+Install Oh My Zsh
+Install Powerlevel10k theme
+Install zsh-autosuggestions
+Install zsh-syntax-highlighting
+
+exec zsh → restart shell
+
+SSH & Network
+
+systemctl status ssh → check SSH
+
+ufw allow ssh → allow SSH
+
+ip a → show IP
+
+ip route → show route
+
+ping google.com → check internet
+
+dhclient -r && dhclient → renew IP
+
+reboot → restart system
+
+Docker
+
+Install Docker
+
+docker pull nginx → download nginx image
+
+docker run -d -p 8080:80 nginx → run container
+
+docker ps → running containers
+
+docker exec -it <id> bash → open container
+
+docker stop <id> → stop container
+
+docker rm -f <name> → remove container
+
+Nginx
+
+Install Nginx
+
+systemctl start nginx → start
+
+systemctl enable nginx → enable at boot
+
+systemctl status nginx → check status
+
+Node.js
+
+apt install nodejs npm → install node
+
+node -v → check version
+
+npm -v → check npm
+
+npm i → install packages
+
+npm run dev → run project
+
+npm run build → build project
+
+Java
+
+apt install openjdk-17-jdk → install Java
+
+java -version → check version
+
+Jenkins (Service Method)
+
+Install Jenkins
+
+systemctl enable jenkins → enable
+
+systemctl start jenkins → start
+
+systemctl status jenkins → check status
+
+cat /var/lib/jenkins/secrets/initialAdminPassword → get admin password
+
+journalctl -xeu jenkins.service → check errors
+
+Jenkins (WAR Method)
+
+wget jenkins.war → download
+
+java -jar jenkins.war → run on 8080
+
+java -jar jenkins.war --httpPort=9090 → run on custom port
+
+nohup java -jar jenkins.war & → run in background
+
+Jenkins Remove
+
+systemctl stop jenkins → stop
+
+apt purge jenkins → remove
+
+rm -rf /var/lib/jenkins → delete data
+
+User & Permissions
+
+usermod -aG docker jenkins → give docker access
+
+chmod +x file.sh → make script executable
+
+./file.sh → run script
+
+General
+
+history → command history
+
+clear → clear screen
+
+df → disk space
+
+pwd → current path
+
+ls → list files
