@@ -1,0 +1,53 @@
+Linux Commands
+
+pwd → current folder
+ls → list files
+ls -la → list all files with details
+
+mkdir projects → create folder
+cd projects → open folder
+cd .. → go back
+
+touch notes.txt → create file
+echo "hello linux" > notes.txt → write text
+cat notes.txt → show content
+cp notes.txt backup.txt → copy file
+mv backup.txt old_notes.txt → rename file
+nano notes.txt → edit file
+tree → folder structure
+
+System Commands
+
+sudo apt update → update list
+sudo apt upgrade -y → upgrade packages
+sudo apt install git openssh-client -y → install git & ssh
+
+Git Commands
+
+git --version → check version
+git config --global user.name "name" → set username
+git config --global user.email "email" → set email
+git config --list → show config
+
+SSH
+
+ssh-keygen -t ed25519 -C "email" → create ssh key
+eval "$(ssh-agent -s)" → start ssh agent
+ssh-add ~/.ssh/id_ed25519 → add ssh key
+cat ~/.ssh/id_ed25519.pub → show public key
+ssh -T git@github.com → test connection with GitHub
+
+Git Project
+
+git init → initialize repo
+git add . → add files
+git commit -m "message" → commit
+git branch -M main → rename branch
+git remote add origin repo-link → connect remote
+git status → check status
+git push -u origin main → push code
+git pull origin main → pull code
+git clone repo-link → clone repo
+
+history → show commands
+clear → clear screen
