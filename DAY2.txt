@@ -1,0 +1,87 @@
+ZSH Customization
+
+nano ~/.zshrc → open zsh config file
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" → install Oh My Zsh
+
+git clone ... powerlevel10k → install Powerlevel10k theme
+
+git clone ... zsh-autosuggestions → install zsh-autosuggestions plugin
+
+git clone ... zsh-syntax-highlighting → install zsh-syntax-highlighting plugin
+
+exec zsh → restart zsh
+
+clear / cls / cl → clear screen
+
+SSH Setup
+
+sudo systemctl status ssh → check ssh status
+
+sudo ufw allow ssh → allow ssh in firewall
+
+sudo apt install openssh-server -y → install ssh server
+
+sudo systemctl enable ssh → enable ssh at startup
+
+sudo systemctl start ssh → start ssh service
+
+Network Commands
+
+ip a → show IP address
+
+ip route → show network route
+
+ping 8.8.8.8 → test internet
+
+ping google.com → check DNS
+
+curl -I https://update.code.visualstudio.com → test connection to Visual Studio Code server
+
+sudo dhclient -r → release IP
+
+sudo dhclient → renew IP
+
+reboot → restart system
+
+Package Management
+
+sudo apt update → update package list
+
+sudo apt upgrade -y → upgrade packages
+
+sudo apt install curl ca-certificates -y → install curl & certificates
+
+sudo apt install -y ca-certificates curl gnupg → install required tools
+
+VS Code Server
+
+mkdir -p ~/.vscode-server/bin → create vscode server folder
+
+Docker Installation
+
+sudo install -m 0755 -d /etc/apt/keyrings → create key folder
+
+curl ... docker.com ... → add Docker GPG key
+
+echo "deb ... docker.com ..." → add docker repository
+
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y → install docker
+
+sudo docker run hello-world → test docker
+
+sudo usermod -aG docker $USER → add user to docker group
+
+newgrp docker → apply group changes
+
+docker run hello-world → test without sudo
+
+Node & Project
+
+cd spz-docker → open project folder
+
+ls → list files
+
+npm init -y → initialize Node project
+
+sudo apt install -y nodejs → install Node.js
