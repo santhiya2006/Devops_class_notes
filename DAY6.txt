@@ -1,0 +1,133 @@
+🌟 ZSH Setup
+
+nano ~/.zshrc → edit zsh config
+
+Install Oh My Zsh → improve terminal
+
+Install Powerlevel10k → better theme
+
+Install zsh-autosuggestions → command suggestions
+
+Install zsh-syntax-highlighting → highlight commands
+
+exec zsh → restart shell
+
+🌐 Network & SSH
+
+systemctl status ssh → check ssh
+
+ufw allow ssh → allow ssh
+
+ip a → show IP
+
+ip route → show network route
+
+ping google.com / ping 8.8.8.8 → check internet
+
+dhclient -r && dhclient → renew IP
+
+reboot → restart system
+
+🐳 Docker & Nginx
+
+Install Docker
+
+docker pull nginx → download Nginx image
+
+docker run -d -p 8080:80 nginx → run container
+
+docker ps → running containers
+
+docker images → show images
+
+docker exec -it <id> bash → open container
+
+docker rm -f <name> → remove container
+
+🌍 Nginx (System Install)
+
+apt install nginx → install
+
+systemctl start nginx → start
+
+systemctl enable nginx → enable at boot
+
+systemctl status nginx → check
+
+🟢 Node.js Project
+
+Install Node.js
+
+node -v → version
+
+npm -v → npm version
+
+npm init -y → create package.json
+
+npm i → install packages
+
+npm run dev → run project
+
+npm run build → build project
+
+🔧 Jenkins (Service Install)
+
+Install Jenkins
+
+systemctl enable jenkins → enable
+
+systemctl start jenkins → start
+
+systemctl status jenkins → check
+
+cat /var/lib/jenkins/secrets/initialAdminPassword → get password
+
+journalctl -xeu jenkins.service → check errors
+
+☕ Jenkins (WAR File)
+
+wget jenkins.war → download
+
+java -jar jenkins.war → run
+
+java -jar jenkins.war --httpPort=9090 → custom port
+
+nohup java -jar jenkins.war & → run background
+
+🗑 Remove Jenkins
+
+systemctl stop jenkins → stop
+
+apt purge jenkins → remove
+
+rm -rf /var/lib/jenkins → delete data
+
+☁ Terraform & AWS
+
+Install Terraform
+
+terraform init → initialize
+
+terraform plan → preview
+
+terraform apply → create
+
+terraform destroy → delete
+
+Install AWS CLI
+
+aws configure → set credentials
+
+aws sts get-caller-identity → verify
+
+🤖 Ansible
+
+Install Ansible
+
+ansible --version → check
+
+ansible all -m ping → test connection
+
+ansible-playbook setup.yml → run playbook
+
+ansible-inventory --list → show inventory
