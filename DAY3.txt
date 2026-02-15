@@ -1,0 +1,110 @@
+Nginx (Web Server)
+
+sudo apt install -y nginx → install Nginx
+
+sudo systemctl start nginx → start nginx
+
+sudo systemctl enable nginx → enable at boot
+
+sudo systemctl status nginx → check status
+
+sudo ufw allow 'Nginx Full' → allow nginx in firewall
+
+Docker + Nginx
+
+docker pull nginx → download nginx image
+
+docker images → show images
+
+docker ps → show running containers
+
+docker run -d -p 8080:80 --name mynginx nginx → run nginx container
+
+curl localhost:8080 → test nginx
+
+docker exec -it mynginx bash → open container terminal
+
+docker rm -f mynginx → remove container
+
+docker restart portfolio → restart container
+
+docker stop <id> → stop container
+
+Node.js Project
+
+git clone https://github.com/spiicez21/SPiceZ-Portfolio.git → clone project
+
+npm i → install dependencies
+
+npm run dev → run development server
+
+npm run build → build project
+
+node -v → check node version
+
+npm -v → check npm version
+
+sudo apt install nodejs → install Node.js
+
+sudo apt install build-essential → install build tools
+
+Docker + Portfolio Deploy
+
+docker run -d -p 8080:80 -v $(pwd)/dist:/usr/share/nginx/html nginx
+→ run website inside nginx container
+
+Java Installation
+
+sudo apt install fontconfig openjdk-21-jre → install Java
+
+java -version → check Java version
+
+readlink -f $(which java) → check java path
+
+Jenkins Installation (Service Method)
+
+sudo apt install jenkins → install Jenkins
+
+sudo systemctl enable jenkins → enable at boot
+
+sudo systemctl start jenkins → start service
+
+sudo systemctl status jenkins → check status
+
+sudo journalctl -xeu jenkins.service → check errors
+
+sudo tail -n 50 /var/log/jenkins/jenkins.log → check logs
+
+sudo nano /etc/default/jenkins → edit config
+
+sudo systemctl restart jenkins → restart service
+
+Jenkins WAR Method
+
+wget https://get.jenkins.io/war-stable/latest/jenkins.war → download war file
+
+java -jar jenkins.war → run on port 8080
+
+java -jar jenkins.war --httpPort=9090 → run on port 9090
+
+nohup java -jar jenkins.war --httpPort=9090 & → run in background
+
+Firewall (Jenkins Port)
+
+firewall-cmd --add-service=jenkins --permanent → allow jenkins
+
+firewall-cmd --reload → reload firewall
+
+Networking
+
+ip a → show IP
+
+curl http://localhost:8080 → test local server
+
+General
+
+history → show command history
+
+clear / cls → clear screen
+
+tree → show folder structure
