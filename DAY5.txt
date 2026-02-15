@@ -1,0 +1,77 @@
+Terraform Setup
+
+Install Terraform
+
+apt install terraform → install
+
+terraform --version → check version
+
+AWS CLI
+
+Install AWS CLI
+
+aws --version → check version
+
+aws configure → set access key & region
+
+aws sts get-caller-identity → check login
+
+Terraform Project Setup
+
+mkdir terraform → create folder
+
+cd terraform → open folder
+
+git init → initialize git
+
+git checkout -b main → create branch
+
+touch main.tf → create terraform file
+
+code . → open in VS Code
+
+Terraform Commands
+
+terraform init → initialize project
+
+terraform fmt → format code
+
+terraform validate → check syntax
+
+terraform plan → preview changes
+
+terraform apply → create resources
+
+terraform show → show details
+
+terraform state list → list resources
+
+terraform output → show outputs
+
+terraform plan -destroy → preview delete
+
+terraform destroy → delete resources
+
+terraform version → show version
+
+Git
+
+git clone <repo> → copy repo
+
+git pull → update repo
+
+AWS + Terraform Workflow (Simple Flow)
+
+Install Terraform
+
+Install AWS CLI
+
+Configure AWS
+
+Write main.tf
+
+terraform init
+
+terraform plan
+
+terraform apply
